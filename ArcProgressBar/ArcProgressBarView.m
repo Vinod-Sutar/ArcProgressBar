@@ -48,9 +48,9 @@
     center.x = bounds.origin.x + bounds.size.width / 2.0;
     center.y = bounds.origin.y + bounds.size.height / 2.0;
     
-    CGContextAddArc(outerRing, center.x, center.y, 45, 0.0, M_PI*2, YES);
+    CGContextAddArc(outerRing, center.x, center.y, 70, 0.0, M_PI*2, YES);
     
-    CGContextSetLineWidth(outerRing, 32);
+    CGContextSetLineWidth(outerRing, 52);
     CGContextSetRGBStrokeColor(outerRing,0.2,0.2,0.2,0.8);
     CGContextStrokePath(outerRing);
 }
@@ -67,8 +67,8 @@
     
     CGFloat endPoint = (((M_PI *2)/100)* _progress) + (M_PI + M_PI_2);
     
-    CGContextAddArc(innerRing, center.x, center.y, 12, 4.71, endPoint, YES);
-    CGContextSetLineWidth(innerRing, 24);
+    CGContextAddArc(innerRing, center.x, center.y, 19, 4.71, endPoint, YES);
+    CGContextSetLineWidth(innerRing, 38);
     CGContextSetRGBStrokeColor(innerRing,0.2,0.2,0.2,0.8);
     CGContextStrokePath(innerRing);
     

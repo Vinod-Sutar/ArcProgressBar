@@ -18,20 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7a-BO-189" customClass="ArcProgressBarView">
-                                <rect key="frame" x="120" y="200" width="80" height="80"/>
+                                <rect key="frame" x="100" y="180" width="120" height="120"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Fqc-02-Lf7"/>
-                                    <constraint firstAttribute="width" constant="80" id="lxu-kg-lGV"/>
+                                    <constraint firstAttribute="height" constant="120" id="Fqc-02-Lf7"/>
+                                    <constraint firstAttribute="width" constant="120" id="lxu-kg-lGV"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xuc-LW-ofe">
+                                <rect key="frame" x="100" y="180" width="120" height="120"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Ttw-4g-yAC"/>
+                                    <constraint firstAttribute="height" constant="120" id="d3b-pk-mbd"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pauseResume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ya-hy-H2c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A7a-BO-189" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5ny-y5-MSm"/>
                             <constraint firstItem="A7a-BO-189" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q9U-nK-4MC"/>
+                            <constraint firstItem="Xuc-LW-ofe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eWm-Kb-44C"/>
+                            <constraint firstItem="Xuc-LW-ofe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rG9-4d-guY"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
